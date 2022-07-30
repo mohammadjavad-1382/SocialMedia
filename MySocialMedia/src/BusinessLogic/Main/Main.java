@@ -181,6 +181,7 @@ public class Main {
                 username = str.substring(9);
             else if (str.startsWith("password="))
                 password = str.substring(9);
+
         }
         try {
             user = DataBase.ReadUser.readUser(username, password);
